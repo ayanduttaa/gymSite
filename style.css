@@ -243,6 +243,12 @@
         align-items: center;
         background-color: rgba(0, 0, 0, 0.5); 
     }
+    .landcard{
+        height: 195.92px;
+        width: 322.4px;
+        border-radius: 7px;
+        box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.7);
+    }
    
     .landformdiv{
         height:40vh;
@@ -255,9 +261,6 @@
     .landformbox{
         text-align: center;
     }
-        
-        
-    
 }
 
 /*-------------------------------------------------*/
