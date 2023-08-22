@@ -1,0 +1,481 @@
+/*MODAL GENERALS*/
+.modal{
+    position: absolute;
+    z-index:10000;
+
+}
+.modal-dialog {
+    max-width: 95vw;
+    margin: auto;
+    padding-top:10px;
+    }
+.modal-content {
+    background: rgba(0, 0, 0, 0.7);
+    }
+.modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    }
+.modal-header, .modal-footer{
+    background: rgba(204, 59, 59, 0.7);
+    }
+.modal-title{
+    color:white;
+    font-weight: lighter;
+}
+/*MODAL GENERALS*/
+
+/*CARD MODAL*/
+@media(min-width:641px){
+    .cardmodalintro{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media(max-width:640px){
+    .cardmodalintro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.cardmodalintro .cardinmodal {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    object-fit: contain;
+    margin: 30px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+.cardmodalintrotext{
+    display:flex; 
+    flex-direction:column;
+}
+
+.cardmodallgtxt{
+    color:beige;
+    font-size: 2em;
+    font-weight: lighter;
+}
+.cardmodalsmtxt{
+    color:#bab8b8;
+    font-weight: lighter;
+}
+/*CARD MODAL*/
+/*-----------------------------------------------------------*/
+/*FACILITY MODAL*/
+@media(min-width:641px){
+    .facparent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .facchild{
+        width:50%;
+    }
+    .facimgchilddiv{
+        text-align: center;
+    }
+    .facmodalimg{
+    width: 50%;
+    margin: 0 auto;
+    object-fit: contain;
+    margin: 30px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.7);
+    }
+}
+@media(max-width:641px){
+    .facparent{
+        display: flex;
+        flex-direction: column;
+        padding:15px;
+        margin-bottom:20px;
+    }
+    .facmodalimg{
+        width: 100%;
+        margin: 0 auto;
+        
+        border-radius: 7px;
+        box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.7);
+        }
+    .factxtchilddiv{
+        padding:10px;
+        text-align: justify;
+    }
+}
+.facmodallgtxt{
+     color:beige;
+     font-weight: lighter;
+}
+.facmodalsmtxt{
+    color:#bab8b8;
+}
+/*FACILITY MODAL*/
+
+
+
+/*NAVBAR*/
+.gymnav{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);    
+    z-index: 9999;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-brand{
+    color: white !important;
+}
+.navbar-toggler{
+    border: 0;
+}
+/*-------------------------------------------------*/
+
+/*LANDING*/
+.landvid{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover; /* use "cover" to avoid distortion */
+    filter: brightness(0.5);
+    display: block;
+}
+/*deleted from here */
+
+@media(min-width:641px){
+    .landingcarousel{      
+        width: 40vw;
+    }
+}
+@media(max-width:640px){
+    .landingcarousel{
+        width: 100vw;  
+    }
+}
+
+.landcasitem{
+    padding: 20px;
+}
+.landtxt1{
+    color: white;
+    font-size: 60px;
+    text-align: justify;
+    font-weight: bold;
+}
+.landtxt2{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+    line-height: 2.5;
+}
+.landtxt3{
+
+}
+.landcard{
+    height: 215.92px;
+    width: 342.4px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+@media(min-width:641px){
+    .landholder{
+        display:flex; 
+        position: relative;
+    }
+
+    .landingcarousel{
+        position: absolute !important;
+        z-index: 99!important;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+    
+    .landformdiv{
+        position: absolute !important;
+        z-index: 99!important;
+        height: 100vh;
+        right:0;
+        width:60vw;
+
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .landformbox{
+        background-color: rgba(0, 0, 0, 0.5);    
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.7);
+    }
+    .landinput{
+        background-color: transparent;
+        color:red;
+    }
+   
+}
+@media(max-width:640px){
+    .landholder{
+        display:flex;
+        flex-direction: column; 
+        position: absolute;
+        z-index: 999;
+
+    }
+
+    .landingcarousel{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+   
+    .landformdiv{
+        height:40vh;
+        right:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landformbox{
+        text-align: center;
+    }
+        
+        
+    
+}
+
+/*-------------------------------------------------*/
+
+
+/*--SPECIAL FEATURES--*/
+.spbox{
+    padding:30px;
+}
+.sptxt{
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: 2s;
+}
+.sptxt:hover{
+    transform: scale(1.1);
+    color: #cc3b3b;
+    transition: 1s;
+}
+/*--SPECIAL FEATURES--*/
+/*-------------------------------------------------*/
+
+/*--GYM CARD--*/
+
+.gymcardholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.gymcardimg{
+    height: 215.92px;
+    width: 342.4px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.7);
+    transition: 1s;
+}
+.gymcardimg:hover{
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.gcheading{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.gctxt{
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media(min-width:641px){
+    .gctxtholder{
+        padding: 40px;
+    }
+}
+@media(max-width:640px){
+    .gctxtholder{
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+/*--GYM CARD--*/
+
+/*--TESTIMONIAL--*/
+.testimonialdiv{
+    text-align: center;
+
+}
+
+.teshead{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.tescarousel{
+    margin-top: 70px;
+}
+
+.tesimg{
+    height:150px;
+    width:150px;
+}
+
+.tesname{
+    color: white;
+    font-weight: light;
+    font-size: 20px;
+}
+
+.testimonial{
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 70vw;
+    
+    
+}
+/*--TESTIMONIAL--*/
+
+/*--PRICING--*/
+
+@media(min-width:641px){
+    .pricecon{
+        display: flex;
+        justify-content: center;
+        padding:40px;
+    }
+    .card{
+        width:20%;
+        margin: 20px;
+        box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+
+    }
+    .pricecon{
+        display:flex;
+    } 
+}
+@media(max-width:640px){
+    .card{
+        width:70%;
+        margin-top:20px;
+        margin-bottom:20px;
+        box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4);
+
+    }
+    .pricecon{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+}
+.pricebtn{
+    border-radius: 5;
+    border:0;
+}
+.btn1{
+    background: linear-gradient(to right, #b87333, #c68e4c, #d4a15f, #e1b472, #eec986);
+}
+.btn2{
+    background: linear-gradient(to right, #c0c0c0, #d3d3d3, #e6e6e6);
+}
+.btn3{
+    background: linear-gradient(to right, #FFD700, #FFDF00, #FFD700, #DAA520);
+}
+/*--PRICING--*/
+
+/*--CONTACT--*/
+.conholder{
+    display:flex; 
+    flex-direction:column;
+}
+.conup{
+    width:90vw;
+    display:flex; 
+    align-items:justify;
+}
+.condown{
+    text-align: center;
+}
+/*--CONTACT--*/
+
+.socialogo{
+    margin: 5px;
+}
+.conhead{
+    color:#cc3b3b;
+    font-weight: lighter;
+}
+.conlist{
+    color: white;
+    font-weight:lighter;
+}
+
+
+
+
+
+
+
+
+
+
+.divider {
+    width: 10%;
+    height: 2px;
+    background-color: white;
+    border: none;
+    margin: 0 auto;
+}
+
+
+
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+
+
+
